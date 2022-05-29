@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica;
+}
+
+
+.wrap {
+    width: 850px;
+    margin: auto;
+   
+}
+body {
+background: #EFEFEF;
+background-image: url(img/fondo.jpg);
+background-size: 100vw 100vh;
+background-attachment: fixed;
+margin: 0;
+
+}
+
+header {
+    float: left;
+    width: 100%;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 3);
+    margin-top: 10px;
+    background: #FFF3CD ;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+header .logo{
+    float: left;
+    padding: 18px 0px;
+    
+    
+}
+
+header .logo h1 {
+    font-size: 40px;
+    font-style: italic;
+    color: cornflowerblue;
+    padding: 30px 0px;
+}
+
+header .menu {
+    float: right;
+    padding: 63px 0px;
+}
+
+header .menu a {
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+}
+
+
+header .menu a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background: #23BFF5;
+    transition: width .3s;
+}
+
+header .menu a:hover::after {
+    width: 100%;
+}
+
+/* todo bien */
+
+.main {
+    float: left;
+    margin: 25px;
+    margin-bottom: 100px;
+}
+
+.main .contenido{
+    float: left;
+    width: 40%;   
+    background: #fff;
+    padding: 30px 25px;
+    border-radius:2% ;
+    border: gray solid 1px;
+}
+
+.main .contenido article img{
+    margin: 0px 0px 20px 60px;
+    border-radius:10% ;
+    border: #2d2d2d solid 3px;
+}
+
+.main .contenido article p{
+    text-align: justify;
+}
+.main .contenido article li{
+    text-align: justify;
+}
+
+/* aside */
+
+.main aside {
+    float: right;
+    width: 58%;
+    background: #fff;
+    padding: 30px 25px ;
+    border-radius:2% ;
+    border: gray solid 1px;
+}
+
+footer{
+    clear:both;
+    background: #2d2d2d;
+}
+
+footer .wrap p{
+    font: 20px;
+    color:#fff;
+    text-align: center;
+    padding: 30px 0px;;
+}
+
+
+
+/* carta de presentacion estilos */
+
+.main p{
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.main .estilo{
+    background: #fff;
+    padding: 25px 25px;
+    border-radius:2% ;
+    /* border: gray solid 1px; */
+}
+
+/* formulario */
+
+.form{
+    padding: 30px 150px;
+    /* width: 500px; */
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    border-radius: 7px;
+    
+}
+    .form h2{
+        color: white;
+        text-align: center;
+        margin: 0;
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+    input, textarea{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        border: none;
+    }
+
+    textarea{
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    #boton{
+        background: #31384a;
+        color: #fff;
+        padding: 20px;
+    }
+
+    #boton:hover {
+        cursor: pointer;
+    }
+
+/* todo bien  */
+
+.links img{
+    width: 50px;
+    padding: 5px 8px;
+}
+
+footer .wrap .links{
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* responsivos */
+
+@media (max-width: 580px){
+
+.wrap>.menu{
+    display: grid;
+    float: left;
+    padding: 0px 0px 30px 30px;
+}
+
+.wrap>.logo{
+    float: none;
+    padding: 30px 0px 0px 10px;
+}
+
+.main>aside{
+    width: 100%;
+}
+.wrap>.logo>h1{
+    font-size: 33px;
+    padding: 30px 0px 0px 20px;
+    
+}
+
+main{
+    font-size: 12px;
+    /* display: flex; */
+}
+
+.main>.contenido{
+    width: 51% !important;
+}
+
+aside{
+    flex: 2;
+
+}
+
+div p{
+    font-size: 12px;
+}
+
+.main .estilo{
+    width: 50% !important;
+
+}
+
+.main .form{
+    width: 55% !important;
+}
+.form{
+    padding: 30px 60px !important;
+    float: left;
+    
+}
+.wrap .links{
+    width: 55% !important;
+}
+
+}
+
+
+@media (max-width: 870px){
+
+    .wrap>.menu {
+        float: none;
+        padding: 30px 0px;
+    }
+
+    .menu>a{
+        padding: 5px;
+    }
+
+    .wrap>.logo{
+        float: none;
+        padding: 30px 0px 0px 10px;
+    }
+
+    .wrap>.logo>h1{
+        font-size: 33px;
+    }
+
+    .main>aside{
+        float: left;
+        width: 50%;
+        margin: 0px 0px 0px 7px;
+    }
+
+    main{
+        font-size: 14px;
+    }
+    .main>.contenido{
+        width: 30%;
+    }
+
+    
+    .main .estilo{
+        width: 75%;
+    }
+
+    .main .form{
+        width: 70%;
+    }
+    .form{
+        padding: 30px 100px;
+        float: left;
+        
+    }
+    .wrap .links{
+        width: 85%;
+    }
+}
